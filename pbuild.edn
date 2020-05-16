@@ -13,9 +13,9 @@
  :artifact-id                 "util"
  :artifact-version            "0.1.1-SNAPSHOT"
 
- :description                 "FIXME: Put your library description here"
- :url                         "FIXME: https://github.com/add-your-repo"
- :scm                         {:url "FIXME: https://github.com/add-your-repo"}
+ :description                 "Library Util contains various helpers."
+ :url                         "https://github.com/redstarssystems/util.git"
+ :scm                         {:url "https://github.com/redstarssystems/util.git"}
  :license                     {:name "EPL-2.0"
                                :url  "https://www.eclipse.org/legal/epl-2.0/"}
  ;;:manifest                    {"Multi-Release" "true"}    ;; here you may override MANIFEST.MF

@@ -3,7 +3,7 @@
 ;; Distributed under the Eclipse Public License 2.0 or (at your option) any later version.
 
 (ns org.rssys.util.jvm
-  "Utility helpers for JVM."
+  "Utilities for JVM monitoring."
   (:require [clojure.java.io :as io]
             [clojure.string :as str])
   (:import (java.lang.management ManagementFactory ThreadInfo ThreadMXBean)

@@ -1,5 +1,5 @@
 == Changelog
 
-=== [0.1.0-SNAPSHOT] - 2020-05-16
+=== [0.1.1] - 2020-05-16
 
-* FIXME: add your changelog here
+* Init release. Utilities for JVM monitoring: heap dump and thread dump.
