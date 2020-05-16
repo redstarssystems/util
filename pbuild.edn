@@ -11,7 +11,7 @@
  :target-folder               "target"
  :group-id                    "org.rssys"
  :artifact-id                 "util"
- :artifact-version            "0.1.0"
+ :artifact-version            "0.1.1-SNAPSHOT"
 
  :description                 "FIXME: Put your library description here"
  :url                         "FIXME: https://github.com/add-your-repo"
