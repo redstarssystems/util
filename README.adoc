@@ -1,0 +1,51 @@
+image:https://img.shields.io/github/license/redstarssystems/util[license,link=LICENSE]
+image:https://img.shields.io/clojars/v/org.rssys/util.svg[clojars,link=https://clojars.org/org.rssys/util]
+
+
+== util
+
+Library Util contains various helpers.git remote add origin https://github.com/redstarssystems/util.git
+
+== Usage
+
+Add to :deps section of deps.edn the context dependency (see latest version above):
+
+[source,clojure]
+----
+:deps { org.rssys/util {:mvn/version "0.1.0"}}
+----
+
+== Building project
+
+Easiest way to build project is to use Makefile (make utility). Run `make help` for additional info.
+Other way, to build project using tools.deps run `clojure -A:pbuilder <command>`.
+List of available commands:
+
+* clean         - clear target folder
+* javac         - compile java sources
+* compile       - compile clojure code
+* build         - build jar file (as library)
+* install       - install jar file (library) to local .m2
+* deploy        - deploy jar file (library) to clojars.org
+* conflicts     - show class conflicts (same name class in multiple jar files)
+* release       - release artifact (if `git flow` model is not used). To release artifact run `clojure -A:pbuild release`.
+* bump          - bump version artifact in build file. E.g: `clojure -A:pbuilder bump beta`. Parameter should be
+one of: major, minor, patch, alpha, beta, rc, qualifier, release
+
+== Tests
+
+To run tests use `clojure -A:test` or `make test`. Additional optional parameter may be :unit or :integration
+e.g. `clojure -A:test :unit` or `make test :integration`.
+
+
+== Deploy to repository
+
+Put your repository credentials to settings.xml (or set password prompt in pbuild.edn).
+Run `make deploy`.
+This command will sign jar before deploy, using your gpg key. (see pbuild.edn for signing options)
+
+## License
+
+Copyright © 2020 Mikhail Ananev
+
+Distributed under the Eclipse Public License 2.0 or (at your option) any later version.
